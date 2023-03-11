@@ -1,10 +1,18 @@
-export interface User {
+export interface UserState extends CustomTokenPayload {
+  isLogged: true | false;
+}
+export interface UserCredentials {
+  username: string;
+  password: string;
+}
+export interface LoginResponse {
+  token: string;
+}
+export interface UseUserStructure {
+  loginUser: (userCredentials: UserCredentials) => Promise<void>;
+}
+export interface CustomTokenPayload extends LoginResponse {
   id: string;
   name: string;
   isCommunittyAdmin: true | false;
-}
-
-export interface UserState extends User {
-  isLogged: true | false;
-  token: string;
 }
