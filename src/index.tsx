@@ -4,6 +4,8 @@ import { Provider } from "react-redux";
 import App from "./App";
 import "./index.css";
 import { store } from "./store";
+import "@fontsource/montserrat";
+import "@fontsource/oswald";
 import GlobalStyled from "./styles/globalstyles";
 
 const container = document.getElementById("root")!;
