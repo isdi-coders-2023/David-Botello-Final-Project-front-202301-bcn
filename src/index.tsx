@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import App from "./App";
 import "./index.css";
 import { store } from "./store";
+import GlobalStyled from "./styles/globalstyles";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -11,6 +12,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <GlobalStyled />
       <App />
     </Provider>
   </React.StrictMode>
