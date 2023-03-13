@@ -27,10 +27,10 @@ const Input = ({
           className={`form__input ${name}`}
           type={type}
           name={name}
-          id={name}
           placeholder={placeholder}
           minLength={minLength}
           title={title}
+          aria-label="input"
           required
         />
       </InputStyled>
