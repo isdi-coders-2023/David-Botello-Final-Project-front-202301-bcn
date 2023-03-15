@@ -1,9 +1,12 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import FormStyled from "./FormStyled";
-import Input from "./Input/Input";
+import Input from "../Input/Input";
+import useUserForm from "../../hooks/useUser/useUserForm";
 
 const Form = (): JSX.Element => {
+  const { loginUser } = useUserForm();
+
   const [login, loginSet] = useState({
     username: "",
     password: "",
@@ -19,9 +22,15 @@ const Form = (): JSX.Element => {
     });
   };
 
+  const onSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    await loginUser(login);
+  };
+
   return (
     <>
-      <FormStyled className="form">
+      <FormStyled onSubmit={onSubmitHandler} className="form">
         <div className="form__container">
           <div className="form__title-container">
             <h2 className="form__title">Inicio Sesión</h2>

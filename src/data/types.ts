@@ -15,4 +15,5 @@ export interface CustomTokenPayload extends LoginResponse {
   id: string;
   name: string;
   isCommunittyAdmin: true | false;
+  isLogged: true | false;
 }
