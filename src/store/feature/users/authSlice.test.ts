@@ -18,7 +18,7 @@ describe("Given a authSlice", () => {
         loginActionCreator(demoUser)
       );
 
-      expect(userState).toHaveProperty("isLogged", true);
+      expect(userState).toHaveProperty("isCommunittyAdmin", true);
     });
   });
 });
