@@ -1,6 +1,4 @@
-export interface UserState extends CustomTokenPayload {
-  isLogged: true | false;
-}
+export interface UserState extends CustomTokenPayload {}
 export interface UserCredentials {
   username: string;
   password: string;

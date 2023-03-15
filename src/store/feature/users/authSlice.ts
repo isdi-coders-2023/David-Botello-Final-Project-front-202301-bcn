@@ -3,7 +3,7 @@ import { UserState } from "../../../data/types";
 
 const userInitialState: UserState = {
   name: "",
-  isLogged: false,
+
   isCommunittyAdmin: false,
   id: "",
   token: "",
@@ -19,7 +19,6 @@ export const authSlice = createSlice({
     ): UserState => ({
       ...currentUserState,
       ...action.payload,
-      isLogged: true,
     }),
   },
 });
