@@ -17,6 +17,7 @@ const GlobalStyled = createGlobalStyle`
 --gray-dark: #4E4B5C;
 --white: #fff;
 --gray-light: #eee;
+--red-link: #b30000;
 --tertiary-font: "Oswald";
 --secondary-font: "Montserrat";
 --primary-font: "Faster One";
