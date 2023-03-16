@@ -1,4 +1,4 @@
-import { CustomTokenPayload, UserCredentials, UserState } from "./types";
+import { CustomTokenPayload, UserState } from "./types";
 
 export const userInitialState: UserState = {
   name: "",
@@ -19,11 +19,6 @@ export const demoUser: UserState = {
   isCommunittyAdmin: true,
   id: "0123554498",
   token: "adñsljhifhq¡0ASFRRE·F4u&%0@#3finvcfref",
-};
-
-export const userCredentials: UserCredentials = {
-  username: "dabocher",
-  password: "blablabla",
 };
 
 export const mockTokenPayload: CustomTokenPayload = {

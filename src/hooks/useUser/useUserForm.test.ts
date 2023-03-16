@@ -2,13 +2,10 @@ import { act, renderHook } from "@testing-library/react";
 import useUserForm from "./useUserForm";
 import decodeToken from "jwt-decode";
 import { Wrapper } from "../../utils/Wrapper";
-import {
-  demoUser,
-  mockTokenPayload,
-  userCredentials,
-} from "../../data/mockdata";
+import { demoUser, mockTokenPayload } from "../../data/mockdata";
 import { loginActionCreator } from "../../store/feature/users/authSlice";
 import { server } from "../../data/mockserver";
+import { UserCredentials } from "../../data/types";
 
 beforeAll(() => {
   server.listen();
@@ -22,6 +19,11 @@ afterEach(() => {
 afterAll(() => {
   server.close();
 });
+
+const userCredentials: UserCredentials = {
+  username: "dabocher",
+  password: "blablabla",
+};
 
 const mockDispatcher = jest.fn();
 
