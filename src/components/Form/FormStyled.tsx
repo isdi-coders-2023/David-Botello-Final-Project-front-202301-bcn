@@ -87,8 +87,8 @@ const FormStyled = styled.form`
   }
 
   a {
-    color: red;
-    font-weight: bold;
+    color: var(--red-link);
+    font-weight: 700;
   }
 `;
 
