@@ -1,7 +1,7 @@
-import Form from "./components/Form/Form";
+import LoginForm from "./components/Form/LoginForm/LoginForm";
 
 const App = () => {
-  return <Form />;
+  return <LoginForm />;
 };
 
 export default App;
