@@ -14,6 +14,11 @@ const ButtonStyled = styled.button`
   background-color: var(--accent-color);
   border-radius: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  :disabled {
+    opacity: 0.25;
+    cursor: none;
+  }
 `;
 
 export default ButtonStyled;
