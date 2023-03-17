@@ -8,6 +8,7 @@ describe("Given a Input component", () => {
     test("Then it should show a input textbox", () => {
       render(
         <Input
+          id="username"
           onChange={() => ""}
           className={""}
           type={""}
@@ -15,6 +16,7 @@ describe("Given a Input component", () => {
           placeholder={""}
           minLength={8}
           title={""}
+          aria-label="input"
         />
       );
 
