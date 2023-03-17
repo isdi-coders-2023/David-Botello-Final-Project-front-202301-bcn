@@ -28,6 +28,8 @@ const Form = (): JSX.Element => {
     await loginUser(login);
   };
 
+  const isDisabled =
+    login.username === "" || login.password === "" || login.password.length < 8;
   return (
     <>
       <FormStyled onSubmit={onSubmitHandler} className="form">
@@ -77,7 +79,7 @@ const Form = (): JSX.Element => {
               />
             </div>
           </div>
-          <Button />
+          <Button text={"Iniciar"} isDisabled={isDisabled} />
           <div className="register">
             <span>No estás registrado/a?</span>
             <a href="http://">Clica aquí</a>
