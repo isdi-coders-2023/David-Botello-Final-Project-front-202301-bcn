@@ -43,6 +43,8 @@ const Form = (): JSX.Element => {
                 Usuario
               </label>
               <Input
+                id="username"
+                aria-label="input"
                 name={"username"}
                 placeholder={"Introduce tu usuario"}
                 className={"form__input username"}
@@ -56,6 +58,8 @@ const Form = (): JSX.Element => {
                 Contraseña
               </label>
               <Input
+                id="password"
+                aria-label="contraseña"
                 name={"password"}
                 placeholder={"Introduce tu contraseña"}
                 className={"password"}

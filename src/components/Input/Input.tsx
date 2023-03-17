@@ -2,6 +2,7 @@ import { ReactEventHandler } from "react";
 import InputStyled from "./InputStyled";
 
 interface InputProps {
+  id: string;
   name: string;
   placeholder: string;
   className: string;
@@ -12,6 +13,7 @@ interface InputProps {
 }
 
 const Input = ({
+  id,
   name,
   placeholder,
   type,
@@ -23,6 +25,7 @@ const Input = ({
     <>
       <InputStyled>
         <input
+          id={id}
           onChange={onChange}
           className={`form__input ${name}`}
           type={type}
