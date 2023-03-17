@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FormStyled = styled.form`
+const LoginFormStyled = styled.form`
   font-family: var(--primary-font);
   font-size: 2.4rem;
   color: var(--gray-dark);
@@ -78,4 +78,4 @@ const FormStyled = styled.form`
   }
 `;
 
-export default FormStyled;
+export default LoginFormStyled;
